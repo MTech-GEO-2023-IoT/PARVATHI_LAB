@@ -9,7 +9,7 @@ import time
 GPIO.setmode(GPIO.BCM) 
 #Configure GPIO Pin 17 as output
 GPIO.setup(17,GPIO.OUT)
-a=10
+a=50
 while a!=0
 #Set GPIO Pin to High
   GPIO.output(17,GPIO.HIGH)
