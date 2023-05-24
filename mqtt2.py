@@ -17,7 +17,7 @@ def test(client, userdata, message):
   print("userdata:"+ userdata)
   
   print("message:"+ message.payload)
-  payload=float(message.payload)
+  payload= float(message.payload)
   conn =pymysql.connect(database="Iotdatap",user="user2",password="Pass1234",host="localhost")
 #Create a MySQL Cursor to that executes the SQLs
   cur=conn.cursor()
