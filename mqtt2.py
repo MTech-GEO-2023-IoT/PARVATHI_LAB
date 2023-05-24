@@ -14,8 +14,8 @@ mqttclient = paho.Client(client_uniq, True)
 
 def test(client, userdata, message):
   print("client:"+ str(client))
-#  print("userdata:"+ userdata)
-  print(userrdata)
+  print("userdata:"+ userdata)
+  
   print("message:"+ message.payload)
   payload=float(message.payload)
   conn =pymysql.connect(database="Iotdatap",user="user2",password="Pass1234",host="localhost")
